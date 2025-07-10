@@ -1,0 +1,5 @@
+2025/07/10-21:23:12.873 4890 Creating DB C:\Users\danme\OneDrive\Documents\Dev\edge-dark-mode-extension\tmp\user-data\Default\EdgeCoupons/coupons_data.db since it was missing.
+2025/07/10-21:23:12.913 4890 Reusing MANIFEST C:\Users\danme\OneDrive\Documents\Dev\edge-dark-mode-extension\tmp\user-data\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2025/07/10-21:23:15.438 b3c8 Level-0 table #5: started
+2025/07/10-21:23:15.450 b3c8 Level-0 table #5: 671909 bytes OK
+2025/07/10-21:23:15.457 b3c8 Delete type=0 #3

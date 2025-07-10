@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Launch Edge with Extension",
+            "webRoot": "${workspaceFolder}",
+            "runtimeArgs": [
+                "--load-extension=${workspaceFolder}",
+                "--disk-cache-dir=${workspaceFolder}/tmp/cache"
+            ],
+            "userDataDir": "${workspaceFolder}/tmp/user-data",
+            "url": "https://www.google.com" // Optional: set a startup page
+        }
+    ]
+}

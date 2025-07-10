@@ -1,0 +1,246 @@
+html, body {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+img, video {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+a {
+  color: #80cbc4 !important;
+}
+
+* {
+  /* background-color: transparent !important; */
+  border-color: #333 !important;
+}
+
+/* --- Google Docs Specific Styles --- */
+
+/* Target the main "page" canvas in Google Docs */
+
+
+.kix-appview-editor {
+    background-color: #646464 !important;
+}
+
+
+/* Filter for the main document canvas */
+.kix-canvas-tile-content {
+    filter: invert(0.8) brightness(1.2) contrast(1.2) hue-rotate(180deg) !important;
+}
+
+/* The div behind the canvas, to hide the original white background */
+.kix-page-paginated {
+    background-color: #646464 !important; 
+    border-color: #444 !important;
+}
+
+/* Style the UI toolbars and background */
+#docs-toolbar-wrapper, #docs-chrome {
+    background-color: #1e1e1e !important;
+    border-color: #333 !important;
+}
+
+#scb-quick-actions-menu-button .goog-flat-menu-button-dropdown {
+  background: none !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+
+#scb-quick-actions-menu-button .goog-flat-menu-button-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000000; /* arrow color (light gray for dark mode) */
+}
+
+.docs-ruler,
+.docs-ruler-background,
+.docs-ruler-background-inner,
+.docs-ruler-face,
+.docs-ruler-face-inner,
+.docs-ruler-mask {
+  background-color: #2c2c2c !important; /* dark gray background */
+  border-color: #444 !important;        /* optional: darken borders */
+}
+
+/* Ruler markings and text */
+.docs-ruler-face-number,
+.docs-ruler-face-minor-division,
+.docs-ruler-face-major-division,
+.docs-ruler-face-first-division {
+  color: #bbb !important; /* lighter gray for text */
+  border-color: #555 !important; /* minor/major lines */
+  background-color: transparent !important;
+}
+
+.docs-ruler-mask {
+    background-color: #2c2c2c !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Indent markers */
+.docs-icon-img-container {
+  filter: brightness(0.8) !important;
+}
+
+.docs-title-input-label {
+  display: none !important;
+}
+
+.docs-titlebar-buttons {
+  background-color: #1e1e1e !important;
+}
+
+
+.menu-button.goog-control,
+.menu-button.goog-inline-block,
+#docs-menubar .menu-button,
+#docs-menubar .goog-control {
+    color: #fff !important;
+    background: transparent !important;
+    filter: none !important;
+}
+
+#docs-toolbar-wrapper .goog-toolbar-menu-button-caption,
+#docs-toolbar-wrapper .goog-toolbar-combo-button-input {
+    color: #1f1f1f !important;
+}
+
+#docs-toolbar-wrapper .docs-icon-img, 
+#docs-toolbar-wrapper .goog-toolbar-button-inner-box
+ {
+    filter: invert(1) !important;
+}
+
+.navigation-widget,
+.left-sidebar-container-content-child,
+.navigation-widget-hat,
+.navigation-widget-content,
+.kix-outlines-widget-header-container,
+.chapter-container,
+.chapter-item-label-and-buttons-container,
+.chapter-item-label,
+.chapter-label-content,
+.chapter-item-icon,
+.chapterItemIconContainer,
+.chapter-item-doco-indicator,
+.navigation-item-content-container,
+.navigation-item-content {
+    background-color: #232323 !important;
+    color: #e0e0e0 !important;
+    border-color: #333 !important;
+}
+
+.navigation-widget .docs-icon-img,
+.navigation-widget .docs-icon-img-container,
+.chapterItemIconContainer .docs-icon-img,
+.chapter-item-icon .docs-icon-img {
+    filter: invert(1) !important;
+    /* Makes icons visible on dark backgrounds */
+}
+
+.navigation-widget-header,
+.kix-outlines-widget-header-text-chaptered,
+.chapter-label-content,
+.navigation-item-content {
+    color: #e0e0e0 !important;
+}
+
+
+.navigation-widget-hat-close,
+.navigation-widget-hat-close-button,
+.navigation-widget-hat-close-button-inner-box,
+.navigation-widget-hat-close-button-outer-box {
+    background-color: #232323 !important;
+    color: #e0e0e0 !important;
+    border: none !important;
+}
+
+
+/* Dark background for the entire tab header bar */
+.kix-outlines-widget-header-contents {
+  background-color: #232323 !important;
+  color: #e0e0e0 !important;
+  border-bottom: 1px solid #333 !important;
+}
+
+/* Style for the "Document tabs" or "Outline" title */
+.kix-outlines-widget-header-text-unchaptered,
+.kix-outlines-widget-header-text-chaptered {
+  color: #e0e0e0 !important;
+  background-color: transparent !important;
+  font-weight: 500 !important;
+}
+
+/* "Add tab" button and its icon */
+.kix-outlines-widget-header-add-chapter-button,
+.kix-outlines-widget-header-add-chapter-button-icon {
+  background-color: #2c2c2c !important;
+  border: 1px solid #444 !important;
+  border-radius: 4px !important;
+}
+
+.kix-outlines-widget-header-add-chapter-button-icon .docs-icon-img-container {
+  filter: invert(1) brightness(1.2) !important;
+}
+
+#docs-menubar,
+#docs-menubar .menu-button,
+#docs-menubar .goog-control,
+.docs-omnibox-input,
+.docs-omnibox-input *,
+.assisted-actions-toolbar-omnibox,
+.assisted-actions-toolbar-omnibox * {
+    color: #fff !important;
+    background: transparent !important;
+    filter: none !important;
+    border-color: #444 !important;
+}
+
+
+#docs-menubar .docs-icon-img,
+#docs-menubar .docs-icon-img-container,
+#docs-toolbar-wrapper .goog-toolbar-button-inner-box,
+.docs-omnibox-input .docs-icon-img,
+.docs-omnibox-input .docs-icon-img-container,
+.assisted-actions-toolbar-omnibox .docs-icon-img,
+.assisted-actions-toolbar-omnibox .docs-icon-img-container {
+    filter: invert(1) brightness(1.2) !important;
+}
+
+/* Ensure toolbar text and buttons are readable */
+/* #docs-toolbar-wrapper .goog-toolbar-button .goog-toolbar-button-inner-box, */
+
+
+/* Make the icons (which are often images or SVGs) visible against the dark toolbar */
+
+
+
+/* .docs-ruler {
+    background-color: #2a2a2a !important;
+    border-bottom: 1px solid #333 !important;
+    border-top: 1px solid #333 !important;
+    color: #e0e0e0 !important; 
+} */
+
+/* NEW: Style the ruler's margin overlay */
+
+
+
+
